@@ -1,0 +1,1006 @@
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', 'sans-serif';
+}
+
+.mainContent {
+	display: block;
+	font-size: 0%;
+}
+
+a.skip:focus {
+	font-size: 16px;
+	
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333333;
+}
+@media screen and (min-width:651px) {
+	.sandwich {
+		display: none;
+	}
+}
+/******************LOGO************************/
+.dropbtnlogo {
+    float: left;
+	margin-left: 10%;
+}
+
+@media screen and (max-width: 880px) {
+	.dropbtnlogo {
+		margin-left:0%;
+	}
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropbtn, .dropbtnlogo {
+	float: left;
+	font-size: 120%;
+	color: #ffffff;
+	text-align: center;
+	padding: .75em .75em .75em .75em;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #333333; /*serve per mettere lo sfondo sennò cambia*/
+	border: none;
+    outline: none;
+}
+
+.dropbtnAG {
+	float: right;
+}
+
+.dropbtn:hover, .dropbtnAG:hover, .dropbtnlogin:hover, .dropdown:hover .dropbtn { /*l'ultimo permette di tenere attivo l'hover*/
+	background-color: #ffffff;
+	color: #333333;
+}
+
+@media screen and (max-width: 880px) {
+	em.fa-caret-down {
+		display: none;
+	}
+}
+
+em.fa-caret-down { /*metto padding a freccetta*/
+	padding-left: 0.5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /*do not use #f9f9f9*/ /*oscuro signore*/
+    width: 100%;
+    left: 0;
+    box-shadow: 0em 0.5em 0.7em 0em rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align: center;
+	margin-top: 3em;
+	padding-bottom: .75em;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*creo le colonne che riempiranno tutta la pagina per videogiochi*/
+.column {
+    float: left;
+    width: 20%; /*5 colonne*/
+    padding: 0em 0em 0.5em 0em;
+    background-color: #ffffff;
+    height: 100%;
+	font-size: 120%;
+}
+
+.column a {
+    float: none;
+	text-align: center;
+    color: #000000;
+	margin-left: 0em;
+    padding: 0.25em 0em 0.25em 0em;
+    text-decoration: none;
+    display: block;
+	font-size: 100%;
+}
+
+.column a:hover {
+    background-color: #333333;
+	color: #ffffff;
+}
+
+.colonnatutti {
+	font-size: 150%;
+	height: 100%;
+	padding-top: 12%;
+}
+
+/*creo le colonne che riempiranno tutta la pagina per notizie e recensioni*/
+.polaroid {
+    float: left;
+    width: 19%;
+    background-color: #ffffff;
+    height: 100%;
+	margin: 1.5% .5% .5% .5%;
+}
+
+.polaroid img {
+	display: block;
+	width: 100%;
+    display: flex;
+	
+}
+
+.polaroid img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);	/*per fare il contorno alle immagini*/
+}
+
+.polaroidText {
+	text-align: center;
+	max-width: 100%;
+	margin-top: 5%;
+	font-weight: bold;
+}
+
+.polaroidText a:link, .polaroidText a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+
+.polaroidText:hover {
+	text-decoration: underline;
+}
+
+/**************LOGIN*****************/
+.dropdownlogin {
+    overflow: hidden;
+	margin-right: 10%;
+}
+
+.dropdownAGG {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 880px) {
+	.dropdownlogin {
+		margin-right: 0%;
+	}
+}
+
+.dropbtnlogin {
+    float: right;
+	font-size: 122%;
+	color: #ffffff;
+	text-align: center;
+	padding: .75em .75em .75em .75em;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #333333; /*serve per mettere lo sfondo sennò cambia*/
+}
+
+.dropbtnAG {	
+    float: right;
+	font-size: 120%;
+	color: #ffffff;
+	text-align: center;
+	padding: .75em .25em .75em .25em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/*********************************HOME PAGE*********************************/
+/* Slideshow container */
+.pagecontent {
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	top:0;
+	border-left: 3px solid #333333;
+	border-right: 3px solid #333333;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 60em;
+}
+
+.slides-content {
+	width: 90%;
+	position: relative;
+	padding-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 5%;
+	overflow: hidden;
+}
+
+.mySlides {
+	display:none;
+	position: relative;
+	margin: 0;
+}
+
+.mySlides img {
+	max-width: 100%;
+	margin-bottom: -2px; /*provare con 1%*/ /*viene fuori il bordo sotto, va tolto*/
+}
+
+.mySlides .textslide {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #ffffff;
+	width: 100%;
+	padding: 0% 1% 0% 1%;
+	font-size: 90%;
+}
+
+@media screen and (max-width: 880px) {
+	.mySlides .textslide {
+		font-size: 60%;
+	}
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 0.5em;
+	margin-top: -2em;
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	background-color: #333333;
+}
+
+/* metto a dx il bottone next */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dottod {
+	text-align: center;
+}
+.dot {
+	cursor: pointer;
+	height: 2em;
+	width: 2em;
+	margin: 1em 0.25em;
+	background-color: #333333;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/**************************************************** VIDEOGIOCHI *************************************************/
+.nogamefound
+{
+	height: 60em;
+	width: 83%;
+	border-left: 3px solid #333333;
+	margin-left:  17%;
+	top: 0;
+	bottom: 0;
+}
+
+.nogamefound h4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1%;
+	text-align:center;
+}
+
+.videogiochi {
+	color: #333333;
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-right: 3px solid #333333;
+}
+
+@media screen and (max-width: 880px) {
+	.videogiochi {
+		margin-left: 1%;
+		margin-right: 0%;
+		width: 99%;
+	}
+}
+
+.filtro {
+	width: 14%;
+	margin-right: 3%;
+	float: left;
+	top: 0;
+	background-color: #ffffff;
+
+}
+
+.filtro h5 {
+	text-align: left;
+	margin-bottom: 0.5em; /* spazio tra Classe e sottoclassi (ES tra xbox e one)*/
+	padding-left: 15%;
+}
+.elenco {
+	display:block;
+    position: relative;
+	padding: 0% 0% 5% 20%; /*sposta le righe (cerchio + parole)*/
+    margin-bottom: 1%;
+    cursor: pointer;
+    font-size: 80%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.elenco input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+	display: block;
+    position: absolute;
+    top: 0.15em;  /*centra il cerchio allinea con le parole*/
+    left: 8%;
+    height: 0.7em;/* grandezze cerchio*/
+    width: 0.7em;
+    background-color: #cccccc; /*colore normale*/
+    border-radius: 35%;
+}
+
+.elenco:hover input ~ .checkmark {
+    background-color: #eeeeee;   /*colore quando vado sopra il cerchio*/
+}
+
+.elenco input:checked ~ .checkmark {
+    background-color: #333333; /*colore quando clicco sul cerchio*/
+}
+
+.piattaforme {
+	margin-bottom: 0.7em;
+}
+.piattaforme h4 .generi h4{
+	padding-left: 8%;
+	padding-top: 10%;
+	margin-top: 0%;
+	font-size: 90%;
+}
+.generi {
+	border-top: 1px solid #333333;
+}
+/*PARTE GIOCHI*/
+.giochi {
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 83%;
+	position: relative;
+	float:left;
+	margin-top: 0%;
+	border-left: 3px solid #333333;
+}
+
+.giochiPiccolo
+{
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 83%;
+	position: relative;
+	float:left;
+	margin-top: 0%;
+	height: 60em;
+	border-left: 3px solid #333333;
+}
+
+.scheda {
+	width: 90%;
+	float: left;
+	margin: 10% 5% 0 5%;
+	background-color: #ffffff;
+	border: 3px solid #333333;
+	padding: 2% 2% 2% 2%;
+}
+.scheda h3 {
+  margin: 2% 0;
+}
+.immagine1 {
+	max-width: 20%;
+	margin-right: 0%;
+	float: left;
+}
+
+@media screen and (min-width:651px){
+	.immagine2 {
+		display: none;
+	}
+}
+.descrec {
+	margin-top: 0.5em;
+}
+.descrec a {
+	margin-left: 0.5em;
+	color: #333333;
+}
+.descrec a:hover {
+	color: #0000ff;
+}
+@media screen and (min-width:651px){
+	.desc {
+		width: 80%;
+		float: left;
+	}
+}
+
+.descrizionesx p {
+	padding-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+.descgi {
+	margin: 0.5em 0.5em 0 0.5em;
+}
+
+.filtrobtn
+{
+	width: 100%;
+	background-color: #333333;
+    color: #ffffff;
+	cursor: pointer;
+	font-size: 110%;
+	margin-top: 5%;
+	border: none;
+	margin-bottom: 5%;
+}
+
+
+/**************************************************** VIDEOGIOCHIM *************************************************/
+.nogamefoundM
+{
+	height: 40em;
+	width: 80%;
+	top: 0;
+	bottom: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-right: 3px solid #333333;
+	border-left: 3px solid #333333;
+}
+
+.nogamefoundM h4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1%;
+	text-align:center;
+}
+
+.giochiM {
+	color: #333333;
+	width: 80%;
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	float:left;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-right: 3px solid #333333;
+	border-left: 3px solid #333333;
+}
+
+/*********************************REGISTRAZIONE*********************************/
+.registrazione-contenuto {
+	margin-top: 0%;
+	padding-top: 1%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.riga {
+	text-align: center;
+}
+
+.riga h4 {
+   margin-top: 0%;
+   margin-bottom: 0%;
+   padding-top: 0.75%;
+   padding-bottom: 0.5%;
+   font-size: 130%;
+}
+
+.registrazionebtn {
+	margin-top: 1em;
+	width: 70%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+	font-size: 150%;
+	padding: 0.5em 0.5em;
+	margin-left: 15%;
+}
+
+.riga input {
+	width: 70%;
+	text-align: center;
+	height: 3em;
+}
+
+/****************************************** NOTIZIE *******************************************/
+.News {
+	color: #333333;
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-right: 3px solid #333333;
+}
+@media screen and (max-width: 880px) {
+	.News {
+		margin-left: 1%;
+		margin-right: 0%;
+		width: 99%;
+	}
+}
+
+.data {
+	border-top: 1px solid #333333;
+}
+.data h4{
+	padding-left: 8%;
+	padding-top: 10%;
+	margin-top: 0%;
+	color: #333333;
+}
+
+.Notizia {
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 83%;
+	position: relative;
+	float:left;
+	padding-top: 3%;
+	border-left: 3px solid #333333;
+}
+
+.lastnews {
+  max-width: 90%;
+  position: relative;
+  margin-left: 5%;
+}
+
+.lastnewsimg img {
+  max-width: 100%;
+}
+
+.lastnewstext {
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 120%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 2px;
+  margin: 0;
+}
+.lastnewstext h4 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 5%;
+}
+.lastnewstext p {
+  text-align: left;
+  font-size: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 5%;
+}
+.notizie {
+	width: 90%;
+	float: left;
+	margin: 5% 5% 5% 5%;
+	background-color: #ffffff;
+	border: 3px solid #333333;
+	padding: 2% 2% 2% 2%;
+}
+			/******* COLONNA SINISTRA ****/
+.columnleft img {
+  width:  40%;
+  float: left;
+}
+      /******** COLONNA DESTRA ******/
+.columnright {
+  width: 60%;
+  height: auto;
+  float: left;
+}
+
+.titolonews {
+  text-align: left;
+  font-size: 160%;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+.titolonews a {
+  font-weight: bold;
+  color: #333333;
+}
+.titolonews p {
+  color: #333333;
+  margin: 0;
+  padding-top: 3%;
+  font-size: 80%;
+}
+
+.pagnotizia {
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+  margin: 0% 10% 0 10%;
+  padding: 3% 3% 0 3%;
+  border-left: 3px solid #333333;
+  border-right: 3px solid #333333;
+}
+
+.titolonotizia h1{
+  text-align: left;
+  font-size: 170%;
+  margin: 0;
+}
+
+.adminews h4{
+  color: #333333;
+}
+
+.imgnotizia {
+  border-bottom: 3px solid #333333;
+}
+
+.imgnotizia img{
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.testonotizia {
+  text-align: left;
+  border-bottom: 3px solid #333333;
+}
+
+.inscommenti {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.inscommenti textarea {
+  width: 100%;
+  resize: none;
+}
+
+.commenti {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.commenti h5 {
+  margin: 0;
+  padding-top: 2%;
+  color: #333333;
+  border-top: 1px solid #333333;
+}
+
+.commenti p {
+  margin: 0;
+  padding-top: 1%;
+}
+
+.nonewsFound {
+	height: 20em;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+/*****************************************PULSANTI ELIMINA***************************************************/
+.deletebtn, .commentibtn {
+	margin-top: 1em;
+	width: auto;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+	font-size: 120%;
+	margin-left: 0%;
+	overflow: hidden;
+}
+
+.deletebtnUL {
+	float: right;
+	width: 20%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+	font-size: 120%;
+	margin-left: 5%;
+	margin-bottom: 0.25em;
+	overflow: hidden;
+}
+
+.deletebtnVID {
+  float: right;
+  width: 20%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  font-size: 120%;
+  margin-left: 3%;
+  margin-bottom: 0.25em;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 651px){
+	em.fa-trash {
+		display: none;
+	}
+}
+/*****************************************ADMIN.PHP***************************************************/
+.localA {
+	float: left;
+	width: 20%;
+	top: 0;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.localA p {
+	text-align: center;
+}
+.localA a {
+	color: #333333;
+
+}
+
+.opzioniA {
+	max-width: 60%;
+	float: left;
+	margin-left: 5%;
+	margin-right: 10%;
+	color: #333333;
+	margin-top: 2%;
+}
+.opzioniA h3 {
+	text-align: center;
+}
+
+.AggA {
+	float: left;
+	border: 3px solid #333333;
+	margin-bottom: 5%;
+}
+.aggiungi-contentA input, .aggiungi-contentA textarea{
+    width: 80%;
+    display: inline-block; /*come un float, solo senza il clear nel div successivo*/
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.aggiungi-contentA textarea {
+	text-align:left;
+}
+
+.elencoA input {
+	width: auto;
+}
+
+.rigaA {
+	text-align: center;
+}
+
+.rigaA h4 {
+   margin-top: 0%;
+   margin-bottom: 0%;
+}
+
+.aggiungi-contentA .aggiungibtnA {
+	width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+	font-size: 150%;
+	padding: 5% 5%;
+}
+.checkmarkA {
+	display:none;
+}
+
+/**********************************************************BOTTONE ACCESSIBILITA'*********************************************************/
+.backtotop {
+	display: none;
+	position: fixed;
+	bottom: 13%;
+	right: 3%;
+	float: right;
+	width: 4em;
+	height: 4em;
+}
+
+.backtotop button{
+	clear: both;
+	background: none;
+	width: 4em;
+	height: 4em;
+	border: none;
+	padding: 0;
+}
+
+em.fa-arrow-circle-up {
+	clear: both;
+	display: inline-block;
+	font-size: 4em;
+	color: #ffffff;
+	background-color: #333333;
+	padding: 0.1em;
+}
+/***************************************************** PAGING ******************************************************/
+.pagbtn {
+	width: 100%;
+	position: relative;
+	float:left;
+	font-size: 300%;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+
+.pagbtn a {
+    color: black;
+    padding-right: 1%;
+	padding-left: 1%;
+    text-decoration: none;
+}
+.pagbtn a.activepag {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/***************************************************** FOOTER ******************************************************/
+
+.footer {
+	clear: both;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	color: #ffffff;
+	background-color: #333333;
+}
+
+.footer p {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin: 0.25em;
+	font-size: 120%;
+}
+
+.logoF {
+	width: 75px;
+	margin-right: 0.5em;
+	border-radius: 50%;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+/***********************************************/
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+/************************ACCEDI**************************/
+.pagaccesso {
+	background: url(https://i1.creativecow.net/u/168337/background.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #333333;
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-right: 3px solid #333333;
+	border-left: 3px solid #333333;
+	height: 60em;
+}
+
+.titacc {
+	font-size: 150%;
+	text-align: center;
+	margin: 5% 0 0 0;
+}
+.titacc h1 {
+	margin: 0 0 0 0;
+}
+.formacc {
+	font-size: 150%;
+	text-align: center;
+}
+
+.formacc input {
+	margin: 0 30% 0 30%;
+	width: 40%;
+	text-align: center;
+	font-size: 120%;
+	
+}
+
+.regacce {
+	margin: 5% 0 0 0;
+	font-size: 150%;
+	text-align: center;
+}
+
+.logsigninbtn {
+	margin: 5% 0 0 0;
+	width: 50%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+	font-size: 100%;
+	padding: 2% 2%;
+}
